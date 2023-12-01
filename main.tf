@@ -13,3 +13,8 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+resource "azurerm_resource_group" "test-rg" {
+  name = "learn-tf-rg-east-us"
+  location = "eastus"  
+}
